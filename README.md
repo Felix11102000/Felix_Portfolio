@@ -29,10 +29,10 @@ Berikut beberapa analisis utama yang dilakukan dalam proyek ini:
 6. Total order dan unit terjual per tahun
 
 ## 📁 Struktur File
-- [Query.sql](Felix_sales_query.sql) : berisi seluruh query analisis
-- [Dashboard.pbix](Dashboard_sales.pbix): file Power BI
+- [Felix_sales_query.sql] : berisi seluruh query analisis
+- [Dashboard_sales.pbix]: file Power BI
 ## 🖼️ Pratinjau Dashboard
-[Dashboard Power BI](Dashboard_preview.jpg)
+  [Dashboard_preview.jpg] 
 
 ## 👤 Tentang Saya
 Halo! Saya Felix Usmany, seorang data analyst yang berfokus pada penyajian informasi bisnis berbasis data. Proyek ini mencerminkan kemampuan saya dalam mengolah data mentah menjadi dashboard yang mendukung pengambilan keputusan.
