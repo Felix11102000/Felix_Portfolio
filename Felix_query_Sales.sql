@@ -1,0 +1,69 @@
+#SALES DASHBOARD OPTIMIZATION
+#Dataset: Superstore / Penjualan Umum
+#Author: Felix Usmany
+CREATE DATABASE project3;
+use project3;
+
+DESC Sales_data1;
+#Import Data dari file Csv ke SQL menggunakan Table Data Import Wizard
+#Cek Data
+SELECT * FROM Sales_data1 LIMIT 100;
+
+#1 TOTAL PENJUALAN PER BULAN (Tren)
+SELECT 
+  CONCAT(YEAR_ID, '-', LPAD(MONTH_ID, 2, '0')) AS Bulan,
+  SUM(SALES) AS TotalPenjualan
+FROM sales_data1
+GROUP BY YEAR_ID, MONTH_ID
+ORDER BY Bulan;
+
+#2 TOTAL PENJUALAN PER TAHUN
+SELECT 
+  YEAR_ID AS Tahun,
+  SUM(SALES) AS TotalPenjualan
+FROM sales_data1
+GROUP BY YEAR_ID
+ORDER BY Tahun;
+
+#3 PENJUALAN PER KATEGORI PRODUK
+SELECT 
+  PRODUCTLINE,
+  SUM(SALES) AS TotalPenjualan
+FROM sales_data1
+GROUP BY PRODUCTLINE
+ORDER BY TotalPenjualan DESC;
+
+#4 PENJUALAN PER NEGARA
+SELECT 
+  COUNTRY,
+  SUM(SALES) AS TotalPenjualan
+FROM sales_data1
+GROUP BY COUNTRY
+ORDER BY TotalPenjualan DESC;
+
+#5 PENJUALAN BERDASARKAN DEAL SIZE
+SELECT 
+  DEALSIZE,
+  COUNT(ORDERNUMBER) AS JumlahOrder,
+  SUM(SALES) AS TotalPenjualan
+FROM sales_data1
+GROUP BY DEALSIZE
+ORDER BY TotalPenjualan DESC;
+
+#6 TOTAL ORDER DAN UNIT TERJUAL PER TAHUN
+SELECT 
+  YEAR_ID,
+  COUNT(DISTINCT ORDERNUMBER) AS Total_Order,
+  SUM(QUANTITYORDERED) AS Total_Unit_Terjual
+FROM sales_data1
+GROUP BY YEAR_ID
+ORDER BY YEAR_ID;
+
+#7 TOP 5 KOTA DENGAN PENJUALAN TERTINGGI
+SELECT 
+  CITY,
+  SUM(SALES) AS TotalPenjualan
+FROM sales_data1
+GROUP BY CITY
+ORDER BY TotalPenjualan DESC
+LIMIT 5;
