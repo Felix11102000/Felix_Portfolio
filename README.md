@@ -29,7 +29,7 @@ Berikut beberapa analisis utama yang dilakukan dalam proyek ini:
 6. Total order dan unit terjual per tahun
 
 ## 📁 Struktur File
-- [Felix_sales_query.sql](Felix_sales_query.sql) : berisi seluruh query analisis
+- [Felix_query_sales.sql](Felix_query_sales.sql) : berisi seluruh query analisis
 - [Dashboard_sales.pbix](Dashboard_sales.pbix): file Power BI
 ## 🖼️ Pratinjau Dashboard
   [Dashboard_preview.jpg](Dashboard_preview.jpg)
