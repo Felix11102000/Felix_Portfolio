@@ -37,6 +37,6 @@ Berikut beberapa analisis utama yang dilakukan dalam proyek ini:
 ## 👤 Tentang Saya
 Halo! Saya Felix Usmany, seorang data analyst yang berfokus pada penyajian informasi bisnis berbasis data. Proyek ini mencerminkan kemampuan saya dalam mengolah data mentah menjadi dashboard yang mendukung pengambilan keputusan.
 
-- [LinkedIn](https://www.linkedin.com/in/felix-usmany-346002351)
-- [GitHub](https://github.com/felix11102000)
-- [Email](felixusmany1110@gmail.com)
+- [https://www.linkedin.com/in/felix-usmany-346002351](https://www.linkedin.com/in/felix-usmany-346002351)
+- [https://github.com/felix11102000](https://github.com/felix11102000)
+- [felixusmany1110@gmail.com](felixusmany1110@gmail.com)
